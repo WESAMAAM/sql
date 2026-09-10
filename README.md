@@ -97,13 +97,6 @@ As a robust alternative to CTEs—especially useful for performance optimization
 * **Development Environment:** SQL Server Management Studio (SSMS)
 * **Query Language:** T-SQL
 
-## 📈 Quantifiable Achievements (ATS-Optimized)
-* **Data Modeling & Architecture:** Designed and queried a normalized relational database schema in SQL Server via SSMS, utilizing primary keys (location and date) to merge demographic data with daily vaccination metrics.
-* **Advanced SQL Scripting:** Developed optimized data pipelines using Common Table Expressions (CTEs) and Temporary Tables (`#VaccinationForCountries`) to calculate rolling vaccination percentages and aggregate continent-level data.
-* **Data Cleansing & Logic Correction:** Identified and resolved logical errors in cumulative time-series data by replacing `SUM()` with `MAX()`, ensuring the accurate extraction of peak infection metrics for individual nations.
-* **Precision Type Casting:** Implemented strict data type conversions using `CAST()`, converting raw counts to integers (e.g., `total_deaths AS int`) while retaining floats for precise division operations, accurately calculating a global death rate of 2.1%.
-* **Relational Data Integration:** Executed complex, multi-condition `JOIN` operations (`ON Covid_All_Info.location = CovidDeaths.location AND Covid_All_Info.date = CovidDeaths.date`) to synchronize historical daily records with static population data across thousands of rows.
-
 ## 📊 Conclusion & Key Data Findings
 
 Based on the SQL analysis of the dataset, several critical insights regarding the global impact of COVID-19 and the subsequent vaccination campaigns were extracted. *(Note: The numbers reflect the specific historical timeframe of the dataset, representing a snapshot of the pandemic's progression).*
