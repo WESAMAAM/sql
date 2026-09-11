@@ -63,7 +63,7 @@ To maintain analytical accuracy, it was crucial to separate individual country d
 ![Highest Death Count by Country vs Continent](https://github.com/WESAMAAM/sql/blob/8e11251acc96dc797bda2877d6e240a6b931a857/images/Screenshot%202026-09-08%20231657.png)
 ![Highest Death Count by Country vs Continent](https://github.com/WESAMAAM/sql/blob/018ccc4c4c434953f0e5c15f6ebc77c2052e0e8f/images/Screenshot%202026-09-08%20232502.png)
 ![Death Count Segmented by Specific Continents](https://github.com/WESAMAAM/sql/blob/e3ec6ec09032d251ccf4107031316abb6daa0b2f/images/Screenshot%202026-09-09%20000425.png)
-![Global Numbers Analysis](PLACE_YOUR_IMAGE_LINK_HERE)
+![Global Numbers Analysis](https://github.com/WESAMAAM/sql/blob/f944a0238f25ee69ac864aea120f4d5865eb7ad5/images/Screenshot%202026-09-09%20002234.png)
 
 ---
 
