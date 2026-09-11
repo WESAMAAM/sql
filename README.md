@@ -52,7 +52,7 @@ The analysis began with querying foundational data to verify successful imports 
 * **Total Cases vs. Population:** Calculated the `ContractPercentage` (Infection Rate) to show what percentage of a country's population had been infected, highlighting heavily impacted nations like Andorra, Montenegro, and Czechia.
 
 ![Mortality Rates Analysis](https://github.com/WESAMAAM/sql/blob/673ba28f24b082d2d49d48b9a07458a100a69fcd/images/Screenshot%202026-09-11%20154145.png)
-![Infection Rates vs Population](PLACE_YOUR_IMAGE_LINK_HERE)
+![Infection Rates vs Population](https://github.com/WESAMAAM/sql/blob/a8e70ec320836216dc8096446880901d09720153/images/Screenshot%202026-09-11%20154326.png)
 
 ### 3. Regional & Global Breakdown
 To maintain analytical accuracy, it was crucial to separate individual country data from aggregated continental data (which were mixed in the dataset).
