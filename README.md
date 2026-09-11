@@ -25,6 +25,10 @@ To ensure query efficiency and organizational clarity, the dataset was carefully
    * `CovidDeaths`: Dedicated to population metrics, daily/cumulative cases, and mortality data.
    * `CovidVaccinations`: Focused on testing metrics and the rollout of vaccination campaigns.
 
+![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/4794634f36ac8684b309ea908ebf7e795d9403f1/images/Screenshot%202026-09-11%20153052.png)
+![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/4794634f36ac8684b309ea908ebf7e795d9403f1/images/Screenshot%202026-09-11%20153052.png)
+![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/4794634f36ac8684b309ea908ebf7e795d9403f1/images/Screenshot%202026-09-11%20153052.png)
+
 ---
 
 ## 🧠 Data Accuracy & Logical Validation
