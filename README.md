@@ -78,7 +78,7 @@ Merged the `CovidDeaths` table with the master `Covid_All_Info` table utilizing 
 ### Common Table Expressions (CTEs)
 To perform further calculations on already aggregated and joined data (specifically, calculating the rolling vaccination percentage over time), a **CTE** was employed (`WITH VacOverTime AS`). This encapsulated the complex `JOIN` logic into a temporary, easily readable result set, which was then queried in the outer `SELECT` statement.
 
-![Implementing CTEs](PLACE_YOUR_IMAGE_LINK_HERE)
+![Implementing CTEs](https://github.com/WESAMAAM/sql/blob/723ff3796d17fee9b67448aaf12ffe96404db3c0/images/Screenshot%202026-09-09%20220943.png)
 
 ### Temporary Tables (Temp Tables)
 As a robust alternative to CTEs—especially useful for performance optimization and code reusability—**Temp Tables** (`#VaccinationForCountries`) were utilized. 
