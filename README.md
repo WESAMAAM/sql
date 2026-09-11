@@ -16,6 +16,8 @@ The project leverages a robust blend of cloud and local database management tool
 * **Security & Networking:** Successfully configured AWS **Security Groups (Inbound Rules)** to securely connect the cloud-hosted RDS instance with the local SSMS environment, ensuring a seamless and secure data pipeline.
 
 ![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/ec8c4b3913602e5f0f2e916815e0931712bf314c/images/Screenshot%202026-09-10%20160747.png)
+![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/ec8c4b3913602e5f0f2e916815e0931712bf314c/images/Screenshot%202026-09-10%20160747.png)
+![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/cf43e220447edf45fabef84b63fe66d9e6dabc19/images/Screenshot%20238870.png)
 
 ---
 
@@ -29,7 +31,6 @@ To ensure query efficiency and organizational clarity, the dataset was carefully
 
 ![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/fea7ada9cb84fb1d00368c2a04deecff101b497c/images/Screenshot%202026-09-10%20160306.png)
 ![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/265d1b97e9b50ff775dbfa0fc3e99183bebadffc/images/Screenshot%202026-09-11%20153911.png)
-![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/4794634f36ac8684b309ea908ebf7e795d9403f1/images/Screenshot%202026-09-11%20153052.png)
 
 ---
 
