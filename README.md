@@ -1,5 +1,18 @@
 # COVID-19 SQL Data Exploration & Analysis Project
 
+## 📑 Table of Contents
+* [📌 Project Overview](#📌-project-overview)
+* [🛠️ Infrastructure & Technology Stack](#🛠️-infrastructure--technology-stack)
+* [📂 Data Setup & Architecture](#📂-data-setup--architecture)
+* [🧠 Data Accuracy & Logical Validation](#🧠-data-accuracy--logical-validation)
+* [📊 Data Exploration & Key Queries](#📊-data-exploration--key-queries)
+* [🚀 Advanced SQL Techniques](#🚀-advanced-sql-techniques)
+* [📊 Conclusion & Key Data Findings](#📊-conclusion--key-data-findings)
+* [💡 Key Learnings & Challenges](#💡-key-learnings--challenges)
+* [🛠️ Tools & Technologies Used](#🛠️-tools--technologies-used)
+ 
+---
+
 ## 📌 Project Overview
 
 This project focuses on exploring, analyzing, and deriving actionable insights from the global COVID-19 dataset using **SQL**. **While the COVID-19 dataset is a ubiquitous and heavily utilized staple in data portfolios, its sheer volume and complexity make it an ideal canvas to demonstrate advanced technical proficiency.** The primary objective here is not merely to uncover pandemic statistics, but to prove a deep, practical mastery of SQL and relational database management.
