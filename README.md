@@ -45,7 +45,7 @@ Writing syntactically correct code is only half the battle; understanding the un
 The analysis began with querying foundational data to verify successful imports and inspect the schema. 
 > *Note: Transitioning to T-SQL required adapting to specific syntax, utilizing `SELECT TOP 10 *` rather than the `LIMIT` clause commonly found in other SQL dialects.*
 
-![Initial Data Exploration](PLACE_YOUR_IMAGE_LINK_HERE)
+![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/4794634f36ac8684b309ea908ebf7e795d9403f1/images/Screenshot%202026-09-11%20153052.png)
 
 ### 2. Mortality & Infection Rates (Likelihood of Contracting & Dying)
 * **Total Cases vs. Total Deaths:** Calculated the `DeathPercentage` to estimate the likelihood of dying if a person contracted COVID-19 in their respective country.
