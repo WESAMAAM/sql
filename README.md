@@ -84,7 +84,7 @@ To perform further calculations on already aggregated and joined data (specifica
 As a robust alternative to CTEs—especially useful for performance optimization and code reusability—**Temp Tables** (`#VaccinationForCountries`) were utilized. 
 * **Best Practices Applied:** Integrated the `DROP TABLE IF EXISTS` command prior to table creation to prevent execution errors upon multiple runs. Data was systematically populated using `INSERT INTO` to store complex groupings for continent-wide vaccination percentage tracking.
 
-![Utilizing Temp Tables](PLACE_YOUR_IMAGE_LINK_HERE)
+![Utilizing Temp Tables](https://github.com/WESAMAAM/sql/blob/41239e3cfe3192459f7cefdd9f58e5663ac54039/images/Screenshot%202026-09-10%20005018.png)
 
 ---
 
