@@ -1,6 +1,6 @@
 # COVID-19 SQL Data Exploration & Analysis Project
 
-## 📑 Table of Contents
+## 📚 Table of Contents
 * [📌 Project Overview](#-project-overview)
 * [🛠️ Infrastructure & Technology Stack](#️-infrastructure--technology-stack)
 * [📂 Data Setup & Architecture](#-data-setup--architecture)
