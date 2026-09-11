@@ -51,7 +51,7 @@ The analysis began with querying foundational data to verify successful imports 
 * **Total Cases vs. Total Deaths:** Calculated the `DeathPercentage` to estimate the likelihood of dying if a person contracted COVID-19 in their respective country.
 * **Total Cases vs. Population:** Calculated the `ContractPercentage` (Infection Rate) to show what percentage of a country's population had been infected, highlighting heavily impacted nations like Andorra, Montenegro, and Czechia.
 
-![Mortality Rates Analysis](PLACE_YOUR_IMAGE_LINK_HERE)
+![Mortality Rates Analysis](https://github.com/WESAMAAM/sql/blob/673ba28f24b082d2d49d48b9a07458a100a69fcd/images/Screenshot%202026-09-11%20154145.png)
 ![Infection Rates vs Population](PLACE_YOUR_IMAGE_LINK_HERE)
 
 ### 3. Regional & Global Breakdown
