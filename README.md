@@ -60,6 +60,7 @@ To maintain analytical accuracy, it was crucial to separate individual country d
 * **Continent-Specific Breakdowns:** Authored highly filtered queries using `WHERE continent = '...'` to drill down into the specific death counts for countries within individual continents (Asia, Africa, North America, South America, Europe, Oceania).
 * **Global Macro-Numbers:** Created a unified query to calculate total global cases, global deaths, and the overall global death percentage (yielding approximately 2.1%).
 
+![Highest Death Count by Country vs Continent](https://github.com/WESAMAAM/sql/blob/8e11251acc96dc797bda2877d6e240a6b931a857/images/Screenshot%202026-09-08%20231657.png)
 ![Highest Death Count by Country vs Continent](PLACE_YOUR_IMAGE_LINK_HERE)
 ![Death Count Segmented by Specific Continents](PLACE_YOUR_IMAGE_LINK_HERE)
 ![Global Numbers Analysis](PLACE_YOUR_IMAGE_LINK_HERE)
