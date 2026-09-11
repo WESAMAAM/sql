@@ -1,19 +1,19 @@
 # COVID-19 SQL Data Exploration & Analysis Project
 
 ## 📑 Table of Contents
-* [📌 Project Overview](#📌-project-overview)
-* [🛠️ Infrastructure & Technology Stack](#🛠️-infrastructure--technology-stack)
-* [📂 Data Setup & Architecture](#📂-data-setup--architecture)
-* [🧠 Data Accuracy & Logical Validation](#🧠-data-accuracy--logical-validation)
-* [📊 Data Exploration & Key Queries](#📊-data-exploration--key-queries)
-* [🚀 Advanced SQL Techniques](#🚀-advanced-sql-techniques)
-* [📊 Conclusion & Key Data Findings](#📊-conclusion--key-data-findings)
-* [💡 Key Learnings & Challenges](#💡-key-learnings--challenges)
-* [🛠️ Tools & Technologies Used](#🛠️-tools--technologies-used)
- 
+* [📌 Project Overview](#-project-overview)
+* [🛠️ Infrastructure & Technology Stack](#️-infrastructure--technology-stack)
+* [📂 Data Setup & Architecture](#-data-setup--architecture)
+* [🧠 Data Accuracy & Logical Validation](#-data-accuracy--logical-validation)
+* [📊 Data Exploration & Key Queries](#-data-exploration--key-queries)
+* [🚀 Advanced SQL Techniques](#-advanced-sql-techniques)
+* [📊 Conclusion & Key Data Findings](#-conclusion--key-data-findings)
+* [💡 Key Learnings & Challenges](#-key-learnings--challenges)
+* [🛠️ Tools & Technologies Used](#️-tools--technologies-used)
+
 ---
 
-## 📌 Project Overview
+## <a id="-project-overview"></a>📌 Project Overview
 
 This project focuses on exploring, analyzing, and deriving actionable insights from the global COVID-19 dataset using **SQL**. **While the COVID-19 dataset is a ubiquitous and heavily utilized staple in data portfolios, its sheer volume and complexity make it an ideal canvas to demonstrate advanced technical proficiency.** The primary objective here is not merely to uncover pandemic statistics, but to prove a deep, practical mastery of SQL and relational database management.
 
@@ -21,7 +21,7 @@ Beyond simply writing queries, this project was meticulously designed to simulat
 
 ---
 
-## 🛠️ Infrastructure & Technology Stack
+## <a id="️-infrastructure--technology-stack"></a>🛠️ Infrastructure & Technology Stack
 The project leverages a robust blend of cloud and local database management tools:
 * **Cloud Provider:** Amazon Web Services (AWS)
 * **Database Service:** AWS RDS (Relational Database Service)
@@ -35,7 +35,7 @@ The project leverages a robust blend of cloud and local database management tool
 
 ---
 
-## 📂 Data Setup & Architecture
+## <a id="-data-setup--architecture"></a>📂 Data Setup & Architecture
 To ensure query efficiency and organizational clarity, the dataset was carefully structured before analysis:
 
 1. **Raw Data Ingestion:** Using the **SQL Server Import and Export Wizard**, the comprehensive master dataset (`Covid_All_Info` containing over 67,700 rows) was imported directly into the database. This serves as a pristine, unaltered historical reference.
@@ -48,7 +48,7 @@ To ensure query efficiency and organizational clarity, the dataset was carefully
 
 ---
 
-## 🧠 Data Accuracy & Logical Validation
+## <a id="-data-accuracy--logical-validation"></a>🧠 Data Accuracy & Logical Validation
 Writing syntactically correct code is only half the battle; understanding the underlying data context is critical. This project heavily emphasizes logical validation to prevent skewed results:
 
 * **Cumulative Data Handling (`MAX` vs. `SUM`):** 
@@ -60,22 +60,22 @@ Writing syntactically correct code is only half the battle; understanding the un
 
 ---
 
-## 📊 Data Exploration & Key Queries
+## <a id="-data-exploration--key-queries"></a>📊 Data Exploration & Key Queries
 
-### 1. Initial Data Exploration
+### <a id="1-initial-data-exploration"></a>1. Initial Data Exploration
 The analysis began with querying foundational data to verify successful imports and inspect the schema. 
 > *Note: Transitioning to T-SQL required adapting to specific syntax, utilizing `SELECT TOP 10 *` rather than the `LIMIT` clause commonly found in other SQL dialects.*
 
 ![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/4794634f36ac8684b309ea908ebf7e795d9403f1/images/Screenshot%202026-09-11%20153052.png)
 
-### 2. Mortality & Infection Rates (Likelihood of Contracting & Dying)
+### <a id="2-mortality--infection-rates-likelihood-of-contracting--dying"></a>2. Mortality & Infection Rates (Likelihood of Contracting & Dying)
 * **Total Cases vs. Total Deaths:** Calculated the `DeathPercentage` to estimate the likelihood of dying if a person contracted COVID-19 in their respective country.
 * **Total Cases vs. Population:** Calculated the `ContractPercentage` (Infection Rate) to show what percentage of a country's population had been infected, highlighting heavily impacted nations like Andorra, Montenegro, and Czechia.
 
 ![Mortality Rates Analysis](https://github.com/WESAMAAM/sql/blob/673ba28f24b082d2d49d48b9a07458a100a69fcd/images/Screenshot%202026-09-11%20154145.png)
 ![Infection Rates vs Population](https://github.com/WESAMAAM/sql/blob/a8e70ec320836216dc8096446880901d09720153/images/Screenshot%202026-09-11%20154326.png)
 
-### 3. Regional & Global Breakdown
+### <a id="3-regional--global-breakdown"></a>3. Regional & Global Breakdown
 To maintain analytical accuracy, it was crucial to separate individual country data from aggregated continental data (which were mixed in the dataset).
 * **Country-Level Focus:** Used `WHERE location NOT IN ('World', 'Europe', 'North America', etc.)` to isolate sovereign nations. (Note: The `population` column was intentionally excluded from the final selection here to focus purely on the location and death tolls).
 * **Continent-Specific Breakdowns:** Authored highly filtered queries using `WHERE continent = '...'` to drill down into the specific death counts for countries within individual continents (Asia, Africa, North America, South America, Europe, Oceania).
@@ -88,20 +88,20 @@ To maintain analytical accuracy, it was crucial to separate individual country d
 
 ---
 
-## 🚀 Advanced SQL Techniques
+## <a id="-advanced-sql-techniques"></a>🚀 Advanced SQL Techniques
 To move beyond basic aggregations and extract deeper contextual insights, the following advanced SQL methodologies were implemented:
 
-### Relational Joins & Time Series Tracking
+### <a id="relational-joins--time-series-tracking"></a>Relational Joins & Time Series Tracking
 Merged the `CovidDeaths` table with the master `Covid_All_Info` table utilizing `JOIN` on dual primary keys (`location` and `date`). This allowed for the tracking of daily and cumulative vaccinations against populations over time. The query was designed with flexibility in mind, incorporating comments to help users swap the target country (e.g., 'Albania') effortlessly.
 
 ![Using Joins for Time Series Data](https://github.com/WESAMAAM/sql/blob/5a7f22a0c258aaf4b7ad823a6ed297e5523505eb/images/Screenshot%202026-09-09%20191731.png)
 
-### Common Table Expressions (CTEs)
+### <a id="common-table-expressions-ctes"></a>Common Table Expressions (CTEs)
 To perform further calculations on already aggregated and joined data (specifically, calculating the rolling vaccination percentage over time), a **CTE** was employed (`WITH VacOverTime AS`). This encapsulated the complex `JOIN` logic into a temporary, easily readable result set, which was then queried in the outer `SELECT` statement.
 
 ![Implementing CTEs](https://github.com/WESAMAAM/sql/blob/723ff3796d17fee9b67448aaf12ffe96404db3c0/images/Screenshot%202026-09-09%20220943.png)
 
-### Temporary Tables (Temp Tables)
+### <a id="temporary-tables-temp-tables"></a>Temporary Tables (Temp Tables)
 As a robust alternative to CTEs, especially useful for performance optimization and code reusability **Temp Tables** (`#VaccinationForCountries`) were utilized. 
 * **Best Practices Applied:** Integrated the `DROP TABLE IF EXISTS` command prior to table creation to prevent execution errors upon multiple runs. Data was systematically populated using `INSERT INTO` to store complex groupings for continent-wide vaccination percentage tracking.
 
@@ -109,7 +109,7 @@ As a robust alternative to CTEs, especially useful for performance optimization 
 
 ---
 
-## 📊 Conclusion & Key Data Findings
+## <a id="-conclusion--key-data-findings"></a>📊 Conclusion & Key Data Findings
 
 Based on the SQL analysis of the dataset, several critical insights regarding the global impact of COVID-19 and the subsequent vaccination campaigns were extracted. *(Note: The numbers reflect the specific historical timeframe of the dataset, representing a snapshot of the pandemic's progression).*
 
@@ -145,11 +145,15 @@ Using advanced queries to track vaccination progress, the data highlighted natio
 * **Gibraltar (Europe)** reached a vaccination percentage of **208.76%**, while **Seychelles (Africa)** reached **128.98%**, and **Israel (Asia)** reached **121.28%**.
 * *Analytical Note: Percentages exceeding 100% in the dataset indicate the administration of multiple doses (e.g., two-dose regimens or boosters) relative to the total population size.*
 
-## 💡 Key Learnings & Challenges
+---
+
+## <a id="-key-learnings--challenges"></a>💡 Key Learnings & Challenges
 * **Database Engine Adaptability (PostgreSQL vs. SQL Server):** Coming from a PostgreSQL background, this project served as a practical transition into Microsoft SQL Server (T-SQL). Adapting to syntax nuances—such as substituting `LIMIT` with `TOP`, and handling data conversions via explicit `CAST()` rather than the Postgres `::` shorthand—highlighted the architectural differences between engines and reinforced my ability to quickly adapt to new RDBMS environments.
 * **Context is King:** The most valuable lesson was that SQL syntax mastery is secondary to data comprehension. Realizing that the data was cumulative and pivoting from `SUM()` to `MAX()` saved the integrity of the entire analysis. It proved that a good data analyst doesn't just write queries; they interrogate the logic behind the data.
 
-* ## 🛠️ Tools & Technologies Used
+---
+
+## <a id="️-tools--technologies-used"></a>🛠️ Tools & Technologies Used
 * **Cloud Infrastructure:** AWS RDS (Amazon Relational Database Service)
 * **Database Engine:** Microsoft SQL Server
 * **Development Environment:** SQL Server Management Studio (SSMS)
