@@ -73,7 +73,7 @@ To move beyond basic aggregations and extract deeper contextual insights, the fo
 ### Relational Joins & Time Series Tracking
 Merged the `CovidDeaths` table with the master `Covid_All_Info` table utilizing `JOIN` on dual primary keys (`location` and `date`). This allowed for the tracking of daily and cumulative vaccinations against populations over time. The query was designed with flexibility in mind, incorporating comments to help users swap the target country (e.g., 'Albania') effortlessly.
 
-![Using Joins for Time Series Data](PLACE_YOUR_IMAGE_LINK_HERE)
+![Using Joins for Time Series Data](https://github.com/WESAMAAM/sql/blob/5a7f22a0c258aaf4b7ad823a6ed297e5523505eb/images/Screenshot%202026-09-09%20191731.png)
 
 ### Common Table Expressions (CTEs)
 To perform further calculations on already aggregated and joined data (specifically, calculating the rolling vaccination percentage over time), a **CTE** was employed (`WITH VacOverTime AS`). This encapsulated the complex `JOIN` logic into a temporary, easily readable result set, which was then queried in the outer `SELECT` statement.
