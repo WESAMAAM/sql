@@ -1,9 +1,10 @@
 # COVID-19 Data Exploration & SQL Analysis Project
 
 ## 📌 Project Overview
-This project focuses on exploring, analyzing, and deriving actionable insights from the global COVID-19 dataset using **SQL**. The primary objective is to evaluate infection rates, mortality metrics, and the progression of vaccination campaigns worldwide. 
 
-Beyond simply writing queries, this project was designed to simulate a real-world data engineering and analysis workflow. It covers the entire lifecycle: provisioning cloud infrastructure, establishing secure database connections, architecting the data schema, validating logical data integrity, and ultimately deploying advanced SQL techniques to extract complex insights.
+This project focuses on exploring, analyzing, and deriving actionable insights from the global COVID-19 dataset using **SQL**. **While the COVID-19 dataset is a ubiquitous and heavily utilized staple in data portfolios, its sheer volume and complexity make it an ideal canvas to demonstrate advanced technical proficiency.** The primary objective here is not merely to uncover pandemic statistics, but to prove a deep, practical mastery of SQL and relational database management.
+
+Beyond simply writing queries, this project was meticulously designed to simulate a real-world data engineering and analysis workflow. It covers the entire data lifecycle: provisioning cloud infrastructure, establishing secure database connections, architecting the data schema, performing rigorous logical data validation (correcting cumulative data anomalies), and ultimately deploying advanced SQL techniques, such as CTEs, Temp Tables, and complex Joins-to extract reliable, complex insights.
 
 ---
 
@@ -88,7 +89,7 @@ To perform further calculations on already aggregated and joined data (specifica
 ![Implementing CTEs](https://github.com/WESAMAAM/sql/blob/723ff3796d17fee9b67448aaf12ffe96404db3c0/images/Screenshot%202026-09-09%20220943.png)
 
 ### Temporary Tables (Temp Tables)
-As a robust alternative to CTEs—especially useful for performance optimization and code reusability—**Temp Tables** (`#VaccinationForCountries`) were utilized. 
+As a robust alternative to CTEs, especially useful for performance optimization and code reusability **Temp Tables** (`#VaccinationForCountries`) were utilized. 
 * **Best Practices Applied:** Integrated the `DROP TABLE IF EXISTS` command prior to table creation to prevent execution errors upon multiple runs. Data was systematically populated using `INSERT INTO` to store complex groupings for continent-wide vaccination percentage tracking.
 
 ![Utilizing Temp Tables](https://github.com/WESAMAAM/sql/blob/41239e3cfe3192459f7cefdd9f58e5663ac54039/images/Screenshot%202026-09-10%20005018.png)
