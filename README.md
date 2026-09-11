@@ -28,7 +28,7 @@ To ensure query efficiency and organizational clarity, the dataset was carefully
    * `CovidVaccinations`: Focused on testing metrics and the rollout of vaccination campaigns.
 
 ![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/fea7ada9cb84fb1d00368c2a04deecff101b497c/images/Screenshot%202026-09-10%20160306.png)
-![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/4794634f36ac8684b309ea908ebf7e795d9403f1/images/Screenshot%202026-09-11%20153052.png)
+![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/265d1b97e9b50ff775dbfa0fc3e99183bebadffc/images/Screenshot%202026-09-11%20153911.png)
 ![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/4794634f36ac8684b309ea908ebf7e795d9403f1/images/Screenshot%202026-09-11%20153052.png)
 
 ---
