@@ -15,9 +15,9 @@ The project leverages a robust blend of cloud and local database management tool
 * **IDE / Management Tool:** SQL Server Management Studio (SSMS)
 * **Security & Networking:** Successfully configured AWS **Security Groups (Inbound Rules)** to securely connect the cloud-hosted RDS instance with the local SSMS environment, ensuring a seamless and secure data pipeline.
 
-![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/6bfa1e8404b743dbbad706e67f99bf52d5ae2b55/images/Screenshot%202026-09-11%20170815.png)
-![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/ec8c4b3913602e5f0f2e916815e0931712bf314c/images/Screenshot%202026-09-10%20160747.png)
-![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/cf43e220447edf45fabef84b63fe66d9e6dabc19/images/Screenshot%20238870.png)
+![Infrastructure & Technology Stack 1](https://github.com/WESAMAAM/sql/blob/6bfa1e8404b743dbbad706e67f99bf52d5ae2b55/images/Screenshot%202026-09-11%20170815.png)
+![Infrastructure & Technology Stack 2](https://github.com/WESAMAAM/sql/blob/ec8c4b3913602e5f0f2e916815e0931712bf314c/images/Screenshot%202026-09-10%20160747.png)
+![Infrastructure & Technology Stack 3](https://github.com/WESAMAAM/sql/blob/cf43e220447edf45fabef84b63fe66d9e6dabc19/images/Screenshot%20238870.png)
 
 ---
 
@@ -29,8 +29,8 @@ To ensure query efficiency and organizational clarity, the dataset was carefully
    * `CovidDeaths`: Dedicated to population metrics, daily/cumulative cases, and mortality data.
    * `CovidVaccinations`: Focused on testing metrics and the rollout of vaccination campaigns.
 
-![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/fea7ada9cb84fb1d00368c2a04deecff101b497c/images/Screenshot%202026-09-10%20160306.png)
-![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/265d1b97e9b50ff775dbfa0fc3e99183bebadffc/images/Screenshot%202026-09-11%20153911.png)
+![Data Setup & Architecture 1](https://github.com/WESAMAAM/sql/blob/fea7ada9cb84fb1d00368c2a04deecff101b497c/images/Screenshot%202026-09-10%20160306.png)
+![Data Setup & Architecture 2](https://github.com/WESAMAAM/sql/blob/265d1b97e9b50ff775dbfa0fc3e99183bebadffc/images/Screenshot%202026-09-11%20153911.png)
 
 ---
 
@@ -95,16 +95,6 @@ As a robust alternative to CTEs—especially useful for performance optimization
 
 ---
 
-## 💡 Key Learnings & Challenges
-* **Database Engine Adaptability (PostgreSQL vs. SQL Server):** Coming from a PostgreSQL background, this project served as a practical transition into Microsoft SQL Server (T-SQL). Adapting to syntax nuances—such as substituting `LIMIT` with `TOP`, and handling data conversions via explicit `CAST()` rather than the Postgres `::` shorthand—highlighted the architectural differences between engines and reinforced my ability to quickly adapt to new RDBMS environments.
-* **Context is King:** The most valuable lesson was that SQL syntax mastery is secondary to data comprehension. Realizing that the data was cumulative and pivoting from `SUM()` to `MAX()` saved the integrity of the entire analysis. It proved that a good data analyst doesn't just write queries; they interrogate the logic behind the data.
-
-* ## 🛠️ Tools & Technologies Used
-* **Cloud Infrastructure:** AWS RDS (Amazon Relational Database Service)
-* **Database Engine:** Microsoft SQL Server
-* **Development Environment:** SQL Server Management Studio (SSMS)
-* **Query Language:** T-SQL
-
 ## 📊 Conclusion & Key Data Findings
 
 Based on the SQL analysis of the dataset, several critical insights regarding the global impact of COVID-19 and the subsequent vaccination campaigns were extracted. *(Note: The numbers reflect the specific historical timeframe of the dataset, representing a snapshot of the pandemic's progression).*
@@ -140,3 +130,13 @@ Using advanced queries to track vaccination progress, the data highlighted natio
 
 * **Gibraltar (Europe)** reached a vaccination percentage of **208.76%**, while **Seychelles (Africa)** reached **128.98%**, and **Israel (Asia)** reached **121.28%**.
 * *Analytical Note: Percentages exceeding 100% in the dataset indicate the administration of multiple doses (e.g., two-dose regimens or boosters) relative to the total population size.*
+
+## 💡 Key Learnings & Challenges
+* **Database Engine Adaptability (PostgreSQL vs. SQL Server):** Coming from a PostgreSQL background, this project served as a practical transition into Microsoft SQL Server (T-SQL). Adapting to syntax nuances—such as substituting `LIMIT` with `TOP`, and handling data conversions via explicit `CAST()` rather than the Postgres `::` shorthand—highlighted the architectural differences between engines and reinforced my ability to quickly adapt to new RDBMS environments.
+* **Context is King:** The most valuable lesson was that SQL syntax mastery is secondary to data comprehension. Realizing that the data was cumulative and pivoting from `SUM()` to `MAX()` saved the integrity of the entire analysis. It proved that a good data analyst doesn't just write queries; they interrogate the logic behind the data.
+
+* ## 🛠️ Tools & Technologies Used
+* **Cloud Infrastructure:** AWS RDS (Amazon Relational Database Service)
+* **Database Engine:** Microsoft SQL Server
+* **Development Environment:** SQL Server Management Studio (SSMS)
+* **Query Language:** T-SQL
