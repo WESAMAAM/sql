@@ -61,7 +61,7 @@ To maintain analytical accuracy, it was crucial to separate individual country d
 * **Global Macro-Numbers:** Created a unified query to calculate total global cases, global deaths, and the overall global death percentage (yielding approximately 2.1%).
 
 ![Highest Death Count by Country vs Continent](https://github.com/WESAMAAM/sql/blob/8e11251acc96dc797bda2877d6e240a6b931a857/images/Screenshot%202026-09-08%20231657.png)
-![Highest Death Count by Country vs Continent](PLACE_YOUR_IMAGE_LINK_HERE)
+![Highest Death Count by Country vs Continent](https://github.com/WESAMAAM/sql/blob/018ccc4c4c434953f0e5c15f6ebc77c2052e0e8f/images/Screenshot%202026-09-08%20232502.png)
 ![Death Count Segmented by Specific Continents](PLACE_YOUR_IMAGE_LINK_HERE)
 ![Global Numbers Analysis](PLACE_YOUR_IMAGE_LINK_HERE)
 
