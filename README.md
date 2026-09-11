@@ -15,7 +15,7 @@ The project leverages a robust blend of cloud and local database management tool
 * **IDE / Management Tool:** SQL Server Management Studio (SSMS)
 * **Security & Networking:** Successfully configured AWS **Security Groups (Inbound Rules)** to securely connect the cloud-hosted RDS instance with the local SSMS environment, ensuring a seamless and secure data pipeline.
 
-![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/ec8c4b3913602e5f0f2e916815e0931712bf314c/images/Screenshot%202026-09-10%20160747.png)
+![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/6bfa1e8404b743dbbad706e67f99bf52d5ae2b55/images/Screenshot%202026-09-11%20170815.png)
 ![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/ec8c4b3913602e5f0f2e916815e0931712bf314c/images/Screenshot%202026-09-10%20160747.png)
 ![Initial Data Exploration](https://github.com/WESAMAAM/sql/blob/cf43e220447edf45fabef84b63fe66d9e6dabc19/images/Screenshot%20238870.png)
 
